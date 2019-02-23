@@ -1,15 +1,17 @@
 @echo off
-echo ¡°*----------------------------------------------------------------------------*¡±
-echo ¡°*                                                                            *¡±
-echo ¡°*                                                                            *¡±
-echo ¡°*»¶Ó­Ê¹ÓÃwin10ËøÆÁÍ¼Æ¬ÌáÈ¡ÖúÊÖ  --×÷Õß£ºÎğÍüĞÄ°² zipmaster@163.com          *¡±
-echo ¡°*                                                                            *¡±
-echo ¡°*                                                                            *¡±
-echo ¡°*----------------------------------------------------------------------------*¡±
+echo â€œ*----------------------------------------------------------------------------*â€
+echo â€œ*                                                                            *â€
+echo â€œ*                                                                            *â€
+echo â€œ*æ¬¢è¿ä½¿ç”¨win10é”å±å›¾ç‰‡æå–åŠ©æ‰‹  --ä½œè€…ï¼šå‹¿å¿˜å¿ƒå®‰ zipmaster@163.com          *â€
+echo â€œ*                                                                            *â€
+echo â€œ*                                                                            *â€
+echo â€œ*----------------------------------------------------------------------------*â€
 
-xcopy C:%HOMEPATH%\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets C:\ËøÆÁÍ¼Æ¬\
-cd C:\ËøÆÁÍ¼Æ¬\
+pause
+md "C:\é”å±å›¾ç‰‡\"
+xcopy C:%HOMEPATH%\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets C:\é”å±å›¾ç‰‡\
+cd C:\é”å±å›¾ç‰‡\
 ren * *.jpg
 for %%i in (*.*) do (if  %%~zi lss 200000 (del %%i ))
-echo "ÌáÈ¡Íê³É£¬ÒÑ±£´æÔÚC:\ËøÆÁÍ¼Æ¬!"
+echo "æå–å®Œæˆï¼Œå·²ä¿å­˜åœ¨C:\é”å±å›¾ç‰‡!"
 pause
